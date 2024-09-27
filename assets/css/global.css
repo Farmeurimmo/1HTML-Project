@@ -56,7 +56,7 @@ nav div.right {
     color: var(--text-color);
 }
 
-.middle a:hover, .categories-wrapper a:hover, .tendance:hover {
+.middle a:hover, .categories-wrapper a:hover, .location:hover {
     background-color: lightgray;
     scale: 101%;
 }
@@ -97,26 +97,26 @@ a, textarea, input, p, td, thead, th, label, legend {
     color: var(--text-color);
 }
 
-.tendances-wrapper {
+.grid-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
     margin: 5px;
 }
 
-.tendance img {
+.location img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.tendance h3, #tendances h2, .tendance p {
+.location h3, #tendances h2, .location p {
     margin-block-start: 0;
     margin-block-end: 0;
 }
 
-.tendance {
+.location {
     text-align: left;
     border-radius: 10px;
     text-decoration: none;
@@ -125,7 +125,10 @@ a, textarea, input, p, td, thead, th, label, legend {
 }
 
 .loc-content {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
+    gap: 20px;
 }
 
 .loc-content h3 {
@@ -133,6 +136,7 @@ a, textarea, input, p, td, thead, th, label, legend {
 }
 
 .loc-content p {
+    align-self: flex-end;
     color: var(--text-color-less-important);
 }
 
@@ -140,7 +144,7 @@ strong {
     color: var(--text-color);
 }
 
-#tendances {
+#tendances, #insolites, #experiences, #vehicules {
     border-top-width: 1px;
     border-top-color: black;
     border-top-style: inset;
@@ -192,55 +196,55 @@ strong {
         font-size: 22px;
     }
 
-    .tendances-wrapper {
+    .grid-wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
 @media (min-width: 400px) and (max-width: 800px) {
-    .tendances-wrapper {
+    .grid-wrapper {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (min-width: 800px) and (max-width: 1200px) {
-    .tendances-wrapper {
+@media (min-width: 900px) and (max-width: 1200px) {
+    .grid-wrapper {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media (min-width: 1600px) {
-    .tendances-wrapper {
+    .grid-wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
 @media (min-width: 2000px) {
-    .tendances-wrapper {
+    .grid-wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
 @media (min-width: 2400px) {
-    .tendances-wrapper {
+    .grid-wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
 @media (min-width: 2800px) {
-    .tendances-wrapper {
+    .grid-wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
 @media (min-width: 3200px) {
-    .tendances-wrapper {
+    .grid-wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
 @media (min-width: 3800px) {
-    .tendances-wrapper {
+    .grid-wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
