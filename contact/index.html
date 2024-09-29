@@ -2,9 +2,90 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Contacter le support de Mirage</title>
+    <link href="../assets/css/global.css" rel="stylesheet"/>
+    <link href="../assets/css/contact.css" rel="stylesheet">
 </head>
 <body>
+<header>
+    <nav>
+        <a class="left" href="#">
+            <img alt="Logo mirage" src="../assets/img/logo-no-background.png">
+        </a>
+        <div class="middle">
+            <a href="index.html">Accueil</a>
+            <a href="../contact/index.html">Centre d'aide</a>
+        </div>
+        <div class="right no-default-margin">
+            <p>&#x1F464; Mon compte</p>
+        </div>
+    </nav>
+</header>
 
+<section id="contact">
+    <h2>Me contacter</h2>
+    <h3><strong class="require">*</strong> signifie que le champ est requis.</h3>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input name="access_key" type="hidden" value="00572e2f-f2e8-4512-b062-1d762b113365">
+
+        <div class="form-wrapper">
+            <div class="info-wrapper">
+                <div class="form-group">
+                    <label for="fname">Prénom<strong class="require">*</strong></label>
+                    <input autocomplete="given-name" id="fname" name="first-name" required type="text">
+                </div>
+                <div class="form-group">
+                    <label for="lname">Nom de famille<strong class="require">*</strong></label>
+                    <input autocomplete="family-name" id="lname" name="last-name" required type="text">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Numéro de téléphone</label>
+                    <input autocomplete="tel" id="phone" name="phone" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="mail">Adresse mail<strong class="require">*</strong></label>
+                    <input autocomplete="email" id="mail" name="email" required type="text">
+                </div>
+                <fieldset>
+                    <legend>Pour quelle raison nous contactez-vous ?<strong class="require">*</strong></legend>
+                    <div>
+                        <input autocomplete="off" id="radio1" name="contact-raison" type="radio">
+                        <label for="radio1">Une réclamation</label>
+                    </div>
+                    <div>
+                        <input autocomplete="off" id="radio2" name="contact-raison" type="radio">
+                        <label for="radio2">Une suggestion</label>
+                    </div>
+                    <div>
+                        <input autocomplete="off" id="radio3" name="contact-raison" type="radio">
+                        <label for="radio3">Un problème avec le site</label>
+                    </div>
+                    <div>
+                        <input autocomplete="off" id="radio4" name="contact-raison" type="radio">
+                        <label for="radio4">Autre</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="message-wrapper">
+                <div class="form-group">
+                    <label for="message">Votre message<strong class="require">*</strong></label>
+                    <textarea id="message" name="Message" placeholder="Bonjour, je souhaite" required
+                              rows="15"></textarea>
+                </div>
+                <div>
+                    <input autocomplete="off" id="canbecontactedagain" name="Me recontacter" type="checkbox">
+                    <label for="canbecontactedagain">Je souhaite être recontacté</label>
+                </div>
+                <div class="form-group">
+                    <input class="submit" required type="submit" value="Envoyer">
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+<footer>
+
+</footer>
 </body>
 </html>

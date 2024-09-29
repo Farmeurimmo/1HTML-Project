@@ -29,6 +29,10 @@ nav {
     justify-content: space-between;
 }
 
+*:focus {
+    outline: orange solid medium;
+}
+
 nav a.left img {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -147,6 +151,14 @@ a, textarea, input, p, td, thead, th, label, legend {
 
 strong {
     color: var(--text-color);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: lightgray;
+    padding: 20px;
 }
 
 #tendances, #insolites, #experiences, #vehicules {

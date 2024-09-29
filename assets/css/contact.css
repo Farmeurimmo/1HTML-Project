@@ -1,0 +1,84 @@
+.submit {
+    margin-top: 16px;
+}
+
+.submit:hover {
+    background-color: orange;
+}
+
+.require {
+    color: #FFA8A8;
+    font-weight: bolder;
+}
+
+input:required:invalid, textarea:required:invalid {
+    border-color: red;
+}
+
+input:required:valid, textarea:required:invalid {
+    border-color: green;
+}
+
+input:optional {
+    background-color: darkgray;
+}
+
+input.submit {
+    text-decoration: underline;
+    background-color: darkorange;
+}
+
+input:checked {
+    scale: 115%;
+}
+
+input, textarea {
+    border-radius: 0.4rem;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.form-wrapper {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    zoom: 2;
+}
+
+#canbecontactedagain, #radio1, #radio2, #radio3, #radio4 {
+    width: unset;
+}
+
+.info-wrapper, .message-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+@media (min-width: 1300px) {
+    .form-wrapper {
+        flex-direction: row;
+    }
+
+    textarea {
+        min-width: 600px;
+    }
+}
+
+@media (min-width: 1700px) {
+    textarea {
+        min-width: 900px;
+    }
+}
