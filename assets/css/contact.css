@@ -39,21 +39,31 @@ input, textarea {
 }
 
 .form-wrapper {
-    align-items: center;
-    justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 input[type="checkbox"], input[type="radio"] {
-    zoom: 2;
+    zoom: 1.5;
 }
 
 #canbecontactedagain, #radio1, #radio2, #radio3, #radio4 {
@@ -64,21 +74,30 @@ input[type="checkbox"], input[type="radio"] {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 100%;
 }
 
 
-@media (min-width: 1300px) {
+@media (min-width: 1100px) {
     .form-wrapper {
         flex-direction: row;
     }
 
-    textarea {
-        min-width: 600px;
+    .info-wrapper {
+        width: 40%;
+    }
+
+    .message-wrapper {
+        width: 60%;
     }
 }
 
-@media (min-width: 1700px) {
-    textarea {
-        min-width: 900px;
+@media (min-width: 1600px) {
+    .info-wrapper {
+        width: 30%;
+    }
+
+    .message-wrapper {
+        width: 70%;
     }
 }

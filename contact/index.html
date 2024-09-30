@@ -20,8 +20,8 @@
     </nav>
 </header>
 
-<section id="contact">
-    <div class="centered">
+<section class="bordertop" id="contact">
+    <div class="centered padded">
         <h1>Nous contacter</h1>
         <h2><strong class="require">*</strong> signifie que le champ est requis.</h2>
     </div>
@@ -46,7 +46,7 @@
                     <label for="mail">Adresse mail<strong class="require">*</strong></label>
                     <input autocomplete="email" id="mail" name="email" required type="text">
                 </div>
-                <fieldset>
+                <fieldset class="form-group">
                     <legend>Pour quelle raison nous contactez-vous ?<strong class="require">*</strong></legend>
                     <div>
                         <input autocomplete="off" id="radio1" name="contact-raison" type="radio">
@@ -74,7 +74,7 @@
                 </div>
                 <div>
                     <input autocomplete="off" id="canbecontactedagain" name="Me recontacter" type="checkbox">
-                    <label for="canbecontactedagain">Je souhaite être recontacté</label>
+                    <label class="no-default-margin" for="canbecontactedagain">Je souhaite être recontacté</label>
                 </div>
                 <div class="form-group">
                     <input class="submit" required type="submit" value="Envoyer">

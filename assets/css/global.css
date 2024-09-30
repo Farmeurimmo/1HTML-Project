@@ -56,6 +56,10 @@ nav a.right {
     align-items: center;
 }
 
+.padded {
+    padding: 20px;
+}
+
 .middle {
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +173,7 @@ footer {
     padding: 20px;
 }
 
-#tendances, #insolites, #experiences, #vehicules {
+.bordertop {
     border-top-width: 1px;
     border-top-color: black;
     border-top-style: inset;
