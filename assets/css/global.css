@@ -49,6 +49,13 @@ nav a.right {
     text-decoration: none;
 }
 
+.centered {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .middle {
     display: flex;
     flex-wrap: wrap;
