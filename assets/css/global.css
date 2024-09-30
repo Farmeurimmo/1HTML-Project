@@ -44,8 +44,9 @@ nav a.left {
     display: flex;
 }
 
-nav div.right {
+nav a.right {
     margin-right: 26px;
+    text-decoration: none;
 }
 
 .middle {
@@ -53,13 +54,13 @@ nav div.right {
     flex-wrap: wrap;
 }
 
-.middle a {
+.middle a, a.right {
     border-radius: 12px;
     padding: 16px;
     color: var(--text-color);
 }
 
-.middle a:hover, .categories-wrapper a:hover, .location:hover {
+.middle a:hover, .categories-wrapper a:hover, .location:hover, a.right:hover {
     background-color: lightgray;
     scale: 101%;
 }
