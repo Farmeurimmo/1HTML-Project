@@ -69,6 +69,11 @@ nav a.right {
     border-radius: 12px;
     padding: 16px;
     color: var(--text-color);
+    background-color: transparent;
+}
+
+a.active {
+    background-color: rgba(65, 65, 65, 0.37);
 }
 
 .middle a:hover, .categories-wrapper a:hover, .location:hover, a.right:hover {
