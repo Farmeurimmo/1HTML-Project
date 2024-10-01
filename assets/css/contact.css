@@ -62,6 +62,10 @@ form {
     align-items: flex-start;
 }
 
+.row {
+    flex-direction: row;
+}
+
 input[type="checkbox"], input[type="radio"] {
     zoom: 1.5;
 }
