@@ -1,0 +1,27 @@
+#theloc {
+    margin: 20px;
+}
+
+.image-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    .image-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1500px) {
+    .image-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
