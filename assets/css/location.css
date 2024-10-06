@@ -1,5 +1,9 @@
-#theloc {
+section #theloc {
     margin: 20px;
+}
+
+.bordertop {
+    text-align: left;
 }
 
 .image-wrapper {
