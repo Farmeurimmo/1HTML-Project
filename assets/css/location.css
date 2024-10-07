@@ -6,6 +6,30 @@ section #theloc {
     text-align: left;
 }
 
+.card {
+    padding: 12px;
+    background-color: #dedede;
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+    align-items: center;
+    width: max-content;
+    gap: 20px;
+}
+
+.card img {
+    border-radius: 100px;
+}
+
+.card .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column p {
+
+}
+
 .image-wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -16,6 +40,14 @@ section #theloc {
 .image-wrapper img {
     object-fit: cover;
     width: 100%;
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: auto;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 @media (min-width: 900px) {
