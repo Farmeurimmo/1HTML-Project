@@ -2,7 +2,7 @@
     margin: 30px;
     display: flex;
     flex-direction: column;
-    max-width: 1600px;
+    max-width: 1200px;
 }
 
 .section-loc-container {
@@ -44,13 +44,13 @@
 }
 
 .grid-item:first-child img {
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
 }
 
 .grid-item:last-child img {
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
 }
 
 .card .column {
@@ -70,7 +70,7 @@
 
 .image-wrapper {
     box-shadow: var(--box-shadow);
-    border-radius: 16px;
+    border-radius: var(--border-radius);
 }
 
 .book-container {
@@ -78,7 +78,7 @@
     position: sticky;
     top: 100px;
     box-shadow: var(--box-shadow);
-    border-radius: 16px;
+    border-radius: var(--border-radius);
     height: max-content;
     width: 100%;
     max-width: 400px;
