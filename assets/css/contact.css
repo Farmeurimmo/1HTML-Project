@@ -1,7 +1,3 @@
-.submit {
-    margin-top: 16px;
-}
-
 .submit:hover {
     background-color: orange;
 }
@@ -53,6 +49,11 @@ input, textarea {
 .require {
     color: #FFA8A8;
     font-weight: bolder;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
 input:required:invalid, textarea:required:invalid {
