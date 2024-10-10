@@ -26,8 +26,9 @@
     flex-direction: column;
 }
 
-.column p {
-
+.row {
+    flex-direction: row;
+    display: flex;
 }
 
 .image-wrapper {
