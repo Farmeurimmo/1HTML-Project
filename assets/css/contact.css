@@ -51,7 +51,7 @@ input, textarea {
     font-weight: bolder;
 }
 
-.row {
+.row-contact {
     display: flex;
     flex-direction: row;
 }
