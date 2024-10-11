@@ -103,6 +103,21 @@
     gap: var(--large-gap);
 }
 
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    gap: var(--gap);
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--large-gap);
+}
+
 @media (max-width: 700px) {
     .card {
         width: auto;
