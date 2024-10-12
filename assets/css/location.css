@@ -76,7 +76,7 @@
 .book-container {
     padding: 20px;
     position: sticky;
-    top: 100px;
+    top: 40px;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     height: max-content;
