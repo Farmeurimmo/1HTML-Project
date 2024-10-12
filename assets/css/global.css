@@ -89,7 +89,7 @@ a.active {
 
 .middle a:hover, .categories-wrapper a:hover, .location:hover, a.right:hover {
     background-color: lightgray;
-    scale: 101%;
+    outline: lightseagreen solid medium;
 }
 
 .categories-wrapper {
@@ -140,15 +140,6 @@ a, textarea, input, p, td, thead, th, label, legend, li {
     color: var(--text-color);
 }
 
-.grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: var(--gap);
-    margin: 5px;
-    padding: 5px;
-    overflow-x: auto;
-}
-
 ::-webkit-scrollbar {
     width: 9px;
     height: 9px;
@@ -166,9 +157,20 @@ a, textarea, input, p, td, thead, th, label, legend, li {
     background: rgba(255, 141, 0, 0.7);
 }
 
+.grid-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: var(--large-gap);
+    margin: 5px;
+    padding: 5px;
+    overflow-x: auto;
+}
+
 .location img {
     width: 100%;
-    height: 280px;
+    height: 320px;
     object-fit: cover;
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
@@ -177,10 +179,12 @@ a, textarea, input, p, td, thead, th, label, legend, li {
 .location {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     text-align: left;
+    width: 400px;
+    max-width: 800px;
     border-radius: var(--border-radius);
     text-decoration: none;
-    width: 300px;
     box-shadow: var(--box-shadow);
     justify-content: space-between;
 }
