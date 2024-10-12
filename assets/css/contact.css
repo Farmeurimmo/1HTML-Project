@@ -28,7 +28,7 @@ form {
 }
 
 input:optional {
-    background-color: darkgray;
+    background-color: #d5d5d5;
 }
 
 input.submit {
