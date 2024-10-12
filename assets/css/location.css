@@ -20,7 +20,7 @@
     background-color: #dedede;
     display: flex;
     flex-direction: row;
-    border-radius: 16px;
+    border-radius: var(--border-radius);
     align-items: center;
     width: max-content;
     gap: var(--gap);
