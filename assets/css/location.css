@@ -113,7 +113,6 @@ ul {
 
 li {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: var(--large-gap);
 }
