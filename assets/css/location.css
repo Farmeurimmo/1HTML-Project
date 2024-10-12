@@ -205,10 +205,10 @@ li {
 
 @media (min-width: 3200px) {
     .loc-wrapper {
-        max-width: 2000px;
+        max-width: 2400px;
     }
 
     .book-container {
-        max-width: 800px;
+        max-width: 750px;
     }
 }
