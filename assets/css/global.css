@@ -150,29 +150,40 @@ a, textarea, input, p, td, thead, th, label, legend, li {
 
 .location img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
 }
 
 .location {
+    display: flex;
+    flex-direction: column;
     text-align: left;
     border-radius: var(--border-radius);
     text-decoration: none;
-    width: inherit;
-    max-width: 400px;
+    width: 400px;
     box-shadow: var(--box-shadow);
+    justify-content: space-between;
 }
 
 .loc-content {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: space-between;
-    padding: 10px;
     gap: var(--large-gap);
-    min-height: 140px;
+}
+
+.loc-price {
+    display: flex;
+    padding: 10px;
+    gap: var(--gap);
+    align-self: flex-end;
+}
+
+.loc-title {
+    display: flex;
+    padding: 10px;
 }
 
 .loc-content h3 {
