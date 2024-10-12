@@ -78,7 +78,7 @@ nav a.right {
 
 .middle a, a.right {
     border-radius: var(--border-radius);
-    padding: 20px;
+    padding: 14px;
     color: var(--text-color);
     background-color: transparent;
 }
@@ -327,7 +327,7 @@ footer {
 
     .middle a, a.right {
         border-radius: var(--border-radius);
-        padding: 40px;
+        padding: 24px;
     }
 }
 
