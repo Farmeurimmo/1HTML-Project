@@ -10,7 +10,7 @@
     margin-bottom: 40px;
     width: 100%;
     min-width: 250px;
-    max-width: 1600px;
+    max-width: 1500px;
 }
 
 form {
@@ -99,5 +99,35 @@ input[type="checkbox"], input[type="radio"] {
 
     .message-wrapper {
         width: 70%;
+    }
+}
+
+@media (min-width: 2400px) {
+    .form-wrapper {
+        max-width: 1800px;
+    }
+}
+
+@media (min-width: 2900px) {
+    .form-wrapper {
+        max-width: 2200px;
+    }
+}
+
+@media (min-width: 3200px) {
+    .form-wrapper {
+        max-width: 2800px;
+    }
+}
+
+@media (min-width: 4000px) {
+    .form-wrapper {
+        max-width: 3800px;
+    }
+}
+
+@media (min-width: 4500px) {
+    .form-wrapper {
+        max-width: 4200px;
     }
 }
