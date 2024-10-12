@@ -89,7 +89,7 @@ a.active {
 
 .middle a:hover, .categories-wrapper a:hover, .location:hover, a.right:hover {
     background-color: lightgray;
-    outline: lightseagreen solid medium;
+    outline: black solid thin;
 }
 
 .categories-wrapper {
