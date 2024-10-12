@@ -284,6 +284,22 @@ footer {
     .grid-wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
+
+    h1 {
+        font-size: 54px;
+    }
+
+    h2 {
+        font-size: 44px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    a, textarea, input, p, td, thead, th, label, legend, li {
+        font-size: 28px;
+    }
 }
 
 @media (min-width: 2400px) {
@@ -301,6 +317,22 @@ footer {
 @media (min-width: 3200px) {
     .grid-wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 78px;
+    }
+
+    h2 {
+        font-size: 62px;
+    }
+
+    h3 {
+        font-size: 54px;
+    }
+
+    a, textarea, input, p, td, thead, th, label, legend, li {
+        font-size: 44px;
     }
 }
 

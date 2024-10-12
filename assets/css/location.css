@@ -192,3 +192,23 @@ li {
         border-bottom-right-radius: var(--border-radius);
     }
 }
+
+@media (min-width: 2000px) {
+    .loc-wrapper {
+        max-width: 1600px;
+    }
+
+    .book-container {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 3200px) {
+    .loc-wrapper {
+        max-width: 2000px;
+    }
+
+    .book-container {
+        max-width: 800px;
+    }
+}
