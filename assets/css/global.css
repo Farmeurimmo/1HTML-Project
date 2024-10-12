@@ -143,9 +143,11 @@ a, textarea, input, p, td, thead, th, label, legend, li {
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--large-gap);
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--gap);
     margin: 5px;
+    padding: 5px;
+    overflow-x: auto;
 }
 
 .location img {
@@ -276,35 +278,9 @@ footer {
     a, textarea, input, p, td, thead, th, label, legend, li {
         font-size: 20px;
     }
-
-    .grid-wrapper {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-
-@media (min-width: 500px) and (max-width: 800px) {
-    .grid-wrapper {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 900px) and (max-width: 1200px) {
-    .grid-wrapper {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media (min-width: 1600px) {
-    .grid-wrapper {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
 }
 
 @media (min-width: 2000px) {
-    .grid-wrapper {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-
     h1 {
         font-size: 54px;
     }
@@ -331,23 +307,7 @@ footer {
     }
 }
 
-@media (min-width: 2400px) {
-    .grid-wrapper {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-}
-
-@media (min-width: 2800px) {
-    .grid-wrapper {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-}
-
 @media (min-width: 3200px) {
-    .grid-wrapper {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-
     h1 {
         font-size: 78px;
     }
@@ -362,11 +322,5 @@ footer {
 
     a, textarea, input, p, td, thead, th, label, legend, li {
         font-size: 44px;
-    }
-}
-
-@media (min-width: 3800px) {
-    .grid-wrapper {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
