@@ -103,6 +103,7 @@ a.active {
 .topgrid-wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: var(--large-gap);
