@@ -194,7 +194,6 @@ a, textarea, input, p, td, thead, th, label, legend, li {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: var(--large-gap);
 }
 
 .loc-price {
